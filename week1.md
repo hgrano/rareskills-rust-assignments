@@ -36,7 +36,8 @@ fn main() {
 }
 ```
 
-It works with a primitive type because those are always copied onto the stack when calling a function on them, so move/ownership rules don't apply here?
+~~It works with a primitive type because those are always copied onto the stack when calling a function on them, so move/ownership rules don't apply here?~~
+It works with a primitive type because they implement `Copy` and they are copied instead of moved.
 
 ## Exercise 2 - Code analysis
 
